@@ -21,7 +21,7 @@ public class AddToCartTests extends BaseTest {
 		loginPage.authenticate(userTD.getUsername(), userTD.getPassword());
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
-		assertEquals("PRODUCTS", loginPage.getMainPageHeader());
+		assertEquals("Products", loginPage.getMainPageHeader());
 		assertTrue(cartIcon.shoppingCartButtonDisplayState());
 	}
 	

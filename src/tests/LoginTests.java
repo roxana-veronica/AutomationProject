@@ -20,7 +20,7 @@ public class LoginTests extends BaseTest {
 	loginPage.authenticate(userTD.getUsername(), userTD.getPassword());
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	
-	assertEquals("PRODUCTS", loginPage.getMainPageHeader());
+	assertEquals("Products", loginPage.getMainPageHeader());
 	assertTrue(cartIcon.shoppingCartButtonDisplayState());
 }
 	
@@ -43,7 +43,7 @@ public class LoginTests extends BaseTest {
 	public void logout() {
 		loginPage.authenticate(userTD.getUsername(), userTD.getPassword());
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		assertEquals("PRODUCTS", loginPage.getMainPageHeader());
+		assertEquals("Products", loginPage.getMainPageHeader());
 		assertTrue(cartIcon.shoppingCartButtonDisplayState());
 		mainMenu.clickLogout();
 		assertTrue(loginPage.loginButtonState());

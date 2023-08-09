@@ -12,7 +12,7 @@ public class CartIcon {
 	}
 
 	private By shoppingCartIcon = By.id("shopping_cart_container");
-
+	
 	
 	public boolean shoppingCartButtonDisplayState() {
 		return driver.findElement(shoppingCartIcon).isDisplayed();

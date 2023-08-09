@@ -52,7 +52,7 @@ public class BaseTest {
 	
 	@Before
 	public void before() {
-		System.setProperty("webdriver.chrome.driver", "src/resources/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\defin\\Desktop\\chromedriver_win32\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		
